@@ -3,9 +3,15 @@
 python manage.py runserver
 ```
 
+##### Create ENV
+```cmd
+python -m venv ./venv
+```
+
+
 ##### Active ENV
 ```cmd
-./venv/Script/activate.bat
+.\venv\Scripts\activate.bat
 ```
 
 
@@ -14,7 +20,24 @@ python manage.py runserver
 python manage.py collectstatic
 ```
 
+##### Start Project
+```cmd 
+django-admin startproject project_name .
+```
+
+
 ##### Start App
 ```cmd 
 python manage.py startapp listings
+```
+     
+
+##### Table Creation
+```cmd 
+python manage.py migrate  
+```
+
+##### Create Admin
+```cmd 
+python manage.py createsuperuser
 ```
