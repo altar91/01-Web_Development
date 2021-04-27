@@ -34,6 +34,7 @@ python manage.py startapp listings
 
 ##### Table Creation
 ```cmd 
+python manage.py makemigrations table_name
 python manage.py migrate  
 ```
 
