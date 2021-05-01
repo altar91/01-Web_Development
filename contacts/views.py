@@ -27,13 +27,13 @@ def contact(request):
 
         contact.save()
 
-        send_mail(
-            'Property Listing Inquery',
-            'There has been an inquery for ' + listing + '. Sign into the admin panel for more info',
-            'altar.fidansoy@gmail.com',
-            [realtor_email],
-            fail_silently=False
-        )
+#        send_mail(
+#            'Property Listing Inquery',
+#            'There has been an inquery for ' + listing + '. Sign into the admin panel for more info',
+#            'altar.fidansoy@gmail.com',
+#            [realtor_email],
+#            fail_silently=False
+#        )
 
         messages.success(request, 'Your Request has been submitted, a realtor will get back to you soon')
         return redirect('/listings/'+listing_id )

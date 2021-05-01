@@ -339,6 +339,7 @@ Create a file called **local_settings.py** on your server along side of settings
 
 ```
 # python manage.py createsuperuser
+(altar - altar.fidansoy@gmail.com)
 ```
 
 ## Create static files
@@ -427,7 +428,7 @@ After=network.target
 [Service]
 User=djangoadmin
 Group=www-data
-WorkingDirectory=/home/djangoadmin/pyapps/btre_project
+WorkingDirectory=/home/djangoadmin/pyapps/01-Web_Development
 ExecStart=/home/djangoadmin/pyapps/venv/bin/gunicorn \
           --access-logfile - \
           --workers 3 \
@@ -437,6 +438,7 @@ ExecStart=/home/djangoadmin/pyapps/venv/bin/gunicorn \
 [Install]
 WantedBy=multi-user.target
 ```
+
 
 ### Start and enable Gunicorn socket
 
@@ -487,7 +489,7 @@ server {
     }
 }
 ```
-
+Make debug=False in local settings
 ### Enable the file by linking to the sites-enabled dir
 
 ```
